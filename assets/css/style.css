@@ -1,0 +1,27 @@
+/* Simple modern single-column CV, optimized for A4 print */
+:root{--accent:#0b66ff;--paper-width:210mm}
+body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; background:#f3f4f6; margin:0; padding:20px; color:#111}
+.paper{max-width:800px; margin:0 auto; background:#fff; padding:24px; box-shadow:0 10px 30px rgba(0,0,0,0.06);}
+.header{display:flex; justify-content:space-between; align-items:flex-start; border-bottom:1px solid #eee; padding-bottom:12px; margin-bottom:12px}
+.header h1{margin:0; font-size:24px}
+.title{color:#333; margin-top:6px}
+.contact{color:#666; margin-top:6px; font-size:14px}
+.print-controls button{background:var(--accent); color:#fff; border:none; padding:8px 12px; border-radius:6px; cursor:pointer}
+.section{margin-top:14px}
+.section h2{margin:0 0 8px 0; color:var(--accent); font-size:16px}
+.job{margin-bottom:12px}
+.job-header{display:flex; justify-content:space-between; align-items:baseline}
+.job .dates{color:#666; font-size:13px}
+.role{color:#444; margin:6px 0}
+ul{margin:8px 0 0 18px}
+.skills p{margin:0; padding:0}
+.footer-note{margin-top:18px; color:#666; font-size:12px}
+
+/* Print styles */
+@media print{
+  body{background:transparent; padding:0}
+  .paper{box-shadow:none; padding:12mm; margin:0; width:190mm}
+  .print-controls{display:none}
+  @page { size: A4; margin: 12mm; }
+  .job{page-break-inside: avoid; break-inside: avoid}
+}
