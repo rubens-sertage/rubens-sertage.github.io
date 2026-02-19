@@ -33,7 +33,7 @@ h2 {
     font-size: var(--font-size-xl);
 }
 h3 {
-    font-size: var(--font-size-lg);
+    font-size: var(--font-size-regular);
 }
 
 .grid-container {
@@ -103,6 +103,7 @@ h3 {
 .products h2 {
     text-align: center;
 }
+
 .products {
     text-align: left;
     font-size: var(--font-size-regular);
