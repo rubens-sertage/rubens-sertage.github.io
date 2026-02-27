@@ -35,6 +35,9 @@ h2 {
 h3 {
     font-size: var(--font-size-regular);
 }
+h4 {
+    font-size: var(--font-size-sm);
+}
 
 a {
     color: inherit;
