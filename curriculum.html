@@ -3,12 +3,13 @@
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <title>Rubens Sertage Grego — CV</title>
+    <title>Rubens Sertage Grego - CV</title>
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
 <div class="grid-container">
-    <div class="item" style="grid-area: title">
+    <article class="item about-section"
+             style="grid-area: title">
         <h1>Rubens Sertage Grego</h1>
         <h3>Senior Software Engineer</h3>
         <div class="contact">
@@ -16,117 +17,196 @@
             <div>rubone@gmail.com</div>
             <div>Manchester UK</div>
         </div>
-    </div>
+    </article>
 
-    <div class="item summary"
+    <article class="item summary-section"
          style="grid-area: summary">
         <h2>Summary</h2>
         <p>
-            I have been developing software since my last year in the University.
-            During this time achieved many years in software development specially
-            in Java since version 6 to 17; experience in small and large products
-            including high traffic systems; multiple integrations including
-            third-party APIs; expertise in building and scaling both local and
-            cloud-native applications; implement solutions with messaging based
-            services; experience in the full software development life cycle in
-            different kind of environments; exposure with IaaC including Terraform
-            and Docker in different cloud environments; exposure improving CI/CD
-            pipelines like Github Actions and Jenkins; exposure with tools for
-            security Threat Modelling such as SonarCloud and Snyk; good analytical
-            and communication skills; experienced in software development
-            methodologies such as Agile and Waterfall.
+            Senior Backend Software Engineer with over 15 years of experience delivering
+            integration-heavy, distributed systems across healthcare, aviation, retail and media domains.
+            Strong expertise in Java-based backend development, microservices architectures and
+            event-driven systems, with hands-on experience across AWS, Azure and GCP environments.
         </p>
-    </div>
+        <p>
+            Frequently trusted to join complex projects and quickly stabilise or evolve backend services,
+            particularly where delivery is at risk or system boundaries are unclear. Experienced in API
+            design, legacy modernisation, data migration and production-critical environments.
+        </p>
+        <p>
+            Brings strong full-stack capability in Angular when needed, alongside a consistent track record
+            of mentoring engineers and maintaining high standards in testing, code quality and system reliability.
+        </p>
+    </article>
 
-    <div class="item education"
+    <article class="item education-section"
          style="grid-area: education">
-        <h2>Education</h2>
-        <p>
-            Tecnologia em Desenvolvimento de Software<br>
+
+        <h2>Education & Certifications</h2>
+
+        <div class="education-item">
+            <strong>Postgraduate Qualification in Web Development</strong><br>
+            Pontifícia Universidade Católica do Paraná (PUC-PR), Brazil
+        </div>
+
+        <div class="education-item">
+            <strong>Technologist Degree in Software Development</strong><br>
             UNIPAR – Universidade Paranaense, Brazil<br>
-            <i>(Degree later renamed to: Tecnologia em Análise e Desenvolvimento de Sistemas)</i>
-        </p>
+            <em>Undergraduate degree (equivalent to UK Level 6 / Bachelor level)</em>
+        </div>
 
-        <p>
-            Brazilian <b>Technologist Degree (Graduação Tecnológica)</b> at <b>undergraduate (Bachelor) level</b>, focused on applied software development and systems analysis.
-            This qualification constitutes <b>full higher education in Brazil and provides eligibility for postgraduate studies (Master’s and PhD)</b>.
-            Comparable in academic level to a <b>UK Level 6 (Bachelor’s degree)</b>, with a strong vocational and practical emphasis.
-        </p>
+        <div class="education-item">
+            <strong>Certifications</strong><br>
+            • AWS Certified Cloud Practitioner - valid until June 2027<br>
+            • GitHub Foundations - valid until June 2028
+        </div>
 
-    </div>
-    <div class="item experience"
+    </article>
+
+
+    <article class="item experience-section"
          style="grid-area: experience">
         <h2>Experience</h2>
 
-        <div>
-            April 2017 - Present, Manchester - UK<br>
-            <b>Senior Software Engineer • BJSS LTDA now CGI</b>
-            <ul>
-                <li>
-                    Development of front end and back end with Java, Angular, Hibernate, Dropwizard, Spring Boot,
-                    Swagger, Sonar, AWS (lambdas, eventbridge, SQS, SNS, etc.) and other technologies.
-                </li>
-                <li>
-                    Used best practices of Agile, such as Pair Programming, Code review, 3 Amigos, Spikes, etc.
-                </li>
-                <li>
-                    Mentoring junior developers’ through agile practices.
-                </li>
+        <article class="experience-item" id="experience-cgi">
+            <h3>Senior Software Engineer -
+                <a href="https://www.cgi.com/uk/en-gb" target="_blank">
+                    BJSS / CGI
+                </a>
+            </h3>
+            <div class="experience-header">
+                Manchester, UK · April 2017 - Present
+            </div>
+            <ul class="bullets">
+                <li>Senior consultant delivering enterprise-grade solutions across public sector, healthcare, aviation, retail and media domains.</li>
+                <li>Extensive experience in distributed microservices architectures across AWS, Azure and GCP cloud environments.</li>
+                <li>Designed and implemented backend APIs, event-driven systems and frontend applications within high-availability, production-critical systems.</li>
+                <li>Contributed to architectural discussions, integration strategies and cloud migration initiatives across multi-team programmes.</li>
+                <li>Mentored junior engineers through pairing, code reviews and knowledge sharing across multiple engagements.</li>
+                <li>Operated within strong agile delivery environments emphasising TDD, automated testing and iterative delivery.</li>
             </ul>
+        </article>
+
+        <article class="experience-item" id="experience-prati">
+            <h3>Senior Full-Stack Engineer -
+                <a href="https://www.pratidonaduzzi.com.br" target="_blank">
+                    Prati-Donaduzzi
+                </a>
+            </h3>
+            <div class="experience-header">
+                Toledo, Brazil · July 2013 - December 2016
+            </div>
+            <ul class="bullets">
+                <li>Led development of internal enterprise systems supporting pharmaceutical research, operations and compliance processes.</li>
+                <li>Contributed to architectural planning, solution design and project estimation across Java and Ruby-based platforms.</li>
+                <li>Delivered financial, reporting and auditing modules critical to regulatory and tax-related workflows.</li>
+                <li>Maintained operational stability across a multi-system ecosystem through production support and version control management.</li>
+            </ul>
+        </article>
+
+        <article class="experience-item" id="experience-marista">
+            <h3>Senior Full-Stack Engineer -
+                <a href="https://grupomarista.org.br" target="_blank">
+                    Grupo Marista
+                </a>
+            </h3>
+            <div class="experience-header">
+                Curitiba, Brazil · June 2009 - July 2013
+            </div>
+
+            <ul class="bullets">
+                <li>Core engineer on an integrated hospital management platform supporting five hospitals.</li>
+                <li>Contributed to architectural evolution, feature planning and integration strategy within a healthcare domain.</li>
+                <li>Designed reporting and data integration tools critical for financial accountability and reimbursement workflows.</li>
+                <li>Acted as primary contact for diagnosing and resolving production issues in a live clinical environment.</li>
+            </ul>
+        </article>
+
+        <article class="experience-item" id="experience-early">
+            <h3>Software Engineer - Early Career /
+                <a href="https://www.maxiconsistemas.com.br" target="_blank">
+                    Maxicom
+                </a>,
+                <a href="https://ispsaude.com.br" target="_blank">
+                    ISP
+                </a>,
+                Esfera Virtual
+
+            </h3>
+            <div class="experience-header">
+                Brazil · 2007 - 2009
+            </div>
+
+            <ul class="bullets">
+                <li>Worked on web applications and enterprise tools using Java and JEE technologies.</li>
+                <li>Selected to join a startup environment during university, contributing to full lifecycle development activities.</li>
+                <li>Developed e-commerce and enterprise tooling solutions supporting operational workflows.</li>
+            </ul>
+        </article>
+    </article>
+
+    <article class="item skills-section"
+             style="grid-area: skills">
+        <h2>Technical Skills</h2>
+
+        <div class="skill-group">
+            <strong>Architecture & Design:</strong>
+            Microservices, RESTful APIs, GraphQL, Event-Driven Systems, Distributed Systems,
+            Integration Patterns, ETL Concepts, Data Validation & Transformation Pipelines
         </div>
 
-        <div>
-            July 2013 - December 2016, Toledo - Brazil<br>
-            <b>Senior Software Engineer • Prati-Donaduzzi</b>
-            <ul>
-                <li>Full Stack development with Java, Ruby on Rails of local projects for internal use.</li>
-            </ul>
+        <div class="skill-group">
+            <strong>Languages:</strong>
+            Java (multiple versions), TypeScript, JavaScript, SQL, Ruby
         </div>
 
-        <div>
-            June 2009 - July 2013, Curitiba - Brazil<br>
-            <b>Senior Software Engineer • Grupo Marista</b>
-            <ul>
-                <li>
-                    Develop on a J2EE architecture for a medium-traffic Healthcare platform,
-                    improving system stability and handling over 5 Hospitals in Curitiba.
-                </li>
-            </ul>
+        <div class="skill-group">
+            <strong>Backend Technologies:</strong>
+            Spring Boot, Dropwizard, Hibernate/JPA, OpenAPI/Swagger, WireMock,
+            SnapLogic Pipelines, Jasper Reports
         </div>
 
-        <div>
-            January 2009 - June 2009, Cascavel - Brazil<br>
-            <b>Software Engineer • Instituto Sao Paulo</b>
-            <ul>
-                <li>Development and maintenance of a new E-commerce and integrating with the ERP system.</li>
-            </ul>
+        <div class="skill-group">
+            <strong>Frontend:</strong>
+            Angular (multiple versions), Angular Material, HTML5, CSS3
         </div>
 
-        <div>
-            August 2008 - December 2008, Toledo - Brazil<br>
-            <b>Software Engineer • Maxicom Sistemas</b>
-            <ul>
-                <li>Developed internal solutions and tools in Java combined with the company solutions in Oracle Forms and PL/SQL.</li>
-            </ul>
-
+        <div class="skill-group">
+            <strong>Cloud & Infrastructure:</strong>
+            AWS (Lambda, SQS, SNS, EventBridge), Azure, GCP (Pub/Sub),
+            Docker, Docker Compose, Terraform
         </div>
 
-        <div>
-            March 2007 - July 2008, Toledo - Brazil<br>
-            <b>Junior Software Engineer • Esfera Virtual</b>
-            <ul>
-                <li>Development of the personal websites in Java with custom management including local news, earth analysis and virtual showcases.</li>
-            </ul>
+        <div class="skill-group">
+            <strong>Messaging & Integration:</strong>
+            RabbitMQ, AWS EventBridge, GCP Pub/Sub
         </div>
-    </div>
 
-    <div class="item skills"
-         style="grid-area: skills">
-        <h2>Skills</h2>
-        Java, Microservices, J2EE, Backend, Frontend, JavaScript, Typescript, Angular, HTML, CSS3,
-        Message Queues, REST, Agile, Scrum, TDD, Git, Jasper soft reports
-    </div>
-    <div class="item products"
+        <div class="skill-group">
+            <strong>Data & Persistence:</strong>
+            PostgreSQL, MS SQL Server, Sybase, Data Migration & Integration
+        </div>
+
+        <div class="skill-group">
+            <strong>Testing & Quality:</strong>
+            TDD, JUnit, Mockito, Integration Testing, End-to-End Testing,
+            Playwright, Protractor, Artillery,
+            SonarQube/SonarCloud, Snyk
+        </div>
+
+        <div class="skill-group">
+            <strong>DevOps & Tooling:</strong>
+            Git, GitHub, GitHub Actions, Jenkins, Maven, Gradle, npm, Yarn,
+            JFrog/Artifactory, ELK Stack, Grafana
+        </div>
+
+        <div class="skill-group">
+            <strong>Security & Identity:</strong>
+            OAuth2, OKTA, Google Authentication, Role-Based Access Control (RBAC)
+        </div>
+    </article>
+
+    <article class="item products-section"
          style="grid-area: products">
         <h2>Products</h2>
 
@@ -389,7 +469,7 @@
         </article>
 
         <article class="product" id="grupo-marista-hospitalar">
-            <h3>Grupo Marista — Hospitalar (Integrated Hospital Management Platform)</h3>
+            <h3>Grupo Marista - Hospitalar (Integrated Hospital Management Platform)</h3>
             <div class="product-header">
                 <strong>Location:</strong> Curitiba, Brazil<br>
                 <strong>Period:</strong> June 2009 – July 2013<br>
@@ -453,7 +533,28 @@
             </ul>
         </article>
 
-    </div>
+    </article>
+
+    <article class="item testimonials-section"
+             style="grid-area: testimonials">
+        <h2>Selected Feedback</h2>
+
+        <blockquote>
+            “Rubens consistently delivers high-quality work, quickly integrates into complex projects and proactively takes initiative — including leading spikes that helped inform key technical decisions.”
+            <footer>— Squad Lead / Line Manager</footer>
+        </blockquote>
+
+        <blockquote>
+            “His Java expertise was invaluable, and his refactor of the notification service significantly improved readability and maintainability. He went above and beyond while mentoring others.”
+            <footer>— Senior Developer, IAG Programme</footer>
+        </blockquote>
+
+        <blockquote>
+            “Rubens has been a mentor to junior engineers, shaping the way we code and test. His willingness to help and share knowledge had a real impact on my growth.”
+            <footer>— Junior Developer, IAG Programme</footer>
+        </blockquote>
+
+    </article>
 </div>
 
 </body>
