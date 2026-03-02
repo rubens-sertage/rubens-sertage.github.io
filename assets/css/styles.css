@@ -73,8 +73,9 @@ a {
 .about-section {
 
 }
+
 .contact {
-    display: flex;
+    display: none;
     justify-content: space-around;
     align-items: center;
     font-size: var(--font-size-regular);
