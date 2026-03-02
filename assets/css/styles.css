@@ -125,3 +125,16 @@ a {
     text-align: left;
     font-size: var(--font-size-regular);
 }
+
+.full-list {
+    display: none;
+}
+
+.short-list {
+    display: block;
+}
+
+/* Still there in case I want to refresh my memory on what I used to do in that product */
+.irrelevant {
+    display: none;
+}
