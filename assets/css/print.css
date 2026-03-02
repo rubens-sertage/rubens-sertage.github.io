@@ -1,0 +1,70 @@
+@media print {
+    html, body {
+        font-size: 12px;
+        margin: 0;
+        --font-size-sm: 0.8rem;
+        --font-size-lg: 1.1rem;
+        --font-size-xl: 1.15rem;
+        --font-size-huge: 1.2rem;
+
+        background-color: white;
+    }
+
+    h1, h2, h3, h4, h5, h6, p {
+        margin: 0;
+    }
+
+    .about-section h1 {
+        margin: 0.5rem 0 0 0;
+    }
+
+    .about-section h2 {
+        margin: 0;
+    }
+
+    h2 {
+        margin: 0.75rem 0;
+    }
+
+    h3 {
+        margin-top: 0.75rem;
+    }
+
+    .grid-container {
+        max-width: 720px;
+
+        grid-template-areas:
+        "title title title"
+        "summary summary summary"
+        "education experience experience"
+        "skills experience experience"
+        "skills testimonials testimonials"
+        "products products products";
+    }
+
+    .item {
+        padding: 0.5rem;
+    }
+
+    .skill-group,
+    .education-item {
+        margin-bottom: 0.5rem;
+    }
+
+    .skill-group strong,
+    .education-item strong {
+        /*font-size: 0.9rem;*/
+    }
+
+    .education-item em {
+        font-size: var(--font-size-sm);
+    }
+
+    .bullets{
+        padding-left: 1.5rem;
+        margin-block-start: 0.25rem;
+        margin-block-end: 0.25rem;
+        padding-inline-start: 1.5rem;
+        padding-inline-end: 0;
+    }
+}
