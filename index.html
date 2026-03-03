@@ -1,143 +1,508 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Rubens Sertage Grego — CV</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style-v2.css">
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Rubens Sertage Grego - CV</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/print.css">
 </head>
 <body>
-<main class="cv-container">
-  <aside class="sidebar">
-    <div class="profile">
-      <h1>Rubens Sertage Grego</h1>
-      <div class="role">Senior Software Engineer</div>
+<div class="grid-container">
+  <article class="item about-section"
+           style="grid-area: title">
+    <h1>Rubens Sertage Grego</h1>
+    <h3>Senior Backend Software Engineer</h3>
+    <h4>Distributed Systems · Integration · Cloud Architectures</h4>
+    <div class="contact">
+      <div>+447415242394</div>
+      <div>rubone@gmail.com</div>
+      <div>Manchester UK</div>
+    </div>
+  </article>
+
+  <article class="item summary-section"
+           style="grid-area: summary">
+    <h2>Summary</h2>
+    <p>
+      Senior Backend Software Engineer specialising in distributed systems and complex integrations. 15+ years of experience
+      designing and evolving integration-heavy services across healthcare, aviation, retail and media domains, primarily using
+      Java-based microservices architectures across AWS, Azure and GCP.
+    </p>
+    <p>
+      Trusted to stabilise and refactor backend systems where requirements are shifting, system boundaries are unclear, or
+      delivery is at risk. Experienced in API design, legacy modernisation, data migration and production-critical environments,
+      with strong full-stack capability in Angular when required.
+    </p>
+  </article>
+
+  <article class="item education-section"
+           style="grid-area: education">
+
+    <h2>Education & Certifications</h2>
+
+    <div class="education-item">
+      <strong>Postgraduate Qualification in Web Development</strong><br>
+      Pontifícia Universidade Católica do Paraná (PUC-PR), Brazil
     </div>
 
-    <section class="contact card">
-      <h3>Contact</h3>
-      <div>Manchester, UK</div>
-      <div>+44 7415 242394</div>
-      <div>rubens.sertage@gmail.com</div>
-      <div><a href="https://linkedin.com">linkedin.com/in/rubens</a></div>
-    </section>
-
-    <section class="skills card">
-      <h3>Key Skills</h3>
-      <p>Java · Microservices · Spring Boot · Angular · AWS · Docker · Terraform · CI/CD · TDD · Messaging (RabbitMQ/SQS)</p>
-    </section>
-
-    <section class="education card">
-      <h3>Education</h3>
-      <div><strong>Technology in Software Development</strong></div>
-      <div>Universidade do Paraná (UNIPAR) — 2007</div>
-    </section>
-
-  </aside>
-
-  <section class="main">
-    <div class="controls">
-      <button id="printBtn">Print / Save PDF</button>
+    <div class="education-item">
+      <strong>Technologist Degree in Software Development</strong><br>
+      Universidade Paranaense (UNIPAR), Brazil<br>
+      <em>Undergraduate degree (equivalent to UK Level 6 / Bachelor level)</em>
     </div>
 
-    <section class="summary card">
-      <h2>Profile</h2>
-      <p>I have been developing software since my last year in the University. During this time achieved many years in software development specially in Java since version 6 to 17; experience in small and large products including high traffic systems; multiple integrations including third-party APIs; expertise in building and scaling both local and cloud-native applications; implement solutions with messaging based services; experience in the full software development life cycle in different kind of environments; exposure with IaaC including Terraform and Docker in different cloud environments; exposure improving CI/CD pipelines like Github Actions and Jenkins; exposure with tools for security Threat Modelling such as SonarCloud and Snyk; good analytical and communication skills; experienced in software development methodologies such as Agile and Waterfall.</p>
-    </section>
+    <div class="education-item">
+      <strong>Certifications</strong><br>
+      <ul class="bullets">
+        <li>AWS Certified Cloud Practitioner - valid until June 2027</li>
+        <li>GitHub Foundations - valid until June 2028</li>
+      </ul>
+    </div>
 
-    <section class="experience card">
-      <h2>Experience</h2>
+  </article>
 
-      <div class="job">
-        <div class="job-header">
-          <strong>BJSS LTDA (now CGI)</strong>
-          <span class="dates">Apr 2017 — Present · Manchester, UK</span>
-        </div>
-        <div class="role">Senior Software Engineer</div>
-        <ul>
-          <li>Development of front end and back end with Java, Angular, Hibernate, Dropwizard, Spring Boot, Swagger, Sonar, AWS (lambdas, eventbridge, SQS, SNS, etc.).</li>
-          <li>Used best practices of Agile, such as Pair Programming, Code review, 3 Amigos, Spikes.</li>
-          <li>Mentoring junior developers through agile practices.</li>
-        </ul>
+  <article class="item experience-section"
+           style="grid-area: experience">
+    <h2>Experience</h2>
+
+    <article class="experience-item" id="experience-cgi">
+      <h3>Senior Software Engineer -
+        <a href="https://www.cgi.com/uk/en-gb" target="_blank">
+          BJSS / CGI
+        </a>
+      </h3>
+      <div class="experience-header">
+        Manchester, UK · April 2017 - Present
+      </div>
+      <ul class="bullets">
+        <li>Delivered backend-focused solutions across healthcare, aviation, retail and media domains within large-scale distributed systems.</li>
+        <li>Specialised in integration-heavy microservices and event-driven architectures across AWS, Azure and GCP.</li>
+        <li>Led API design, legacy modernisation and migration initiatives in production-critical environments.</li>
+        <li>Mentored engineers through pairing and code reviews, contributing to team capability and code quality standards.</li>
+      </ul>
+    </article>
+
+    <article class="experience-item" id="experience-prati">
+      <h3>Senior Full-Stack Engineer -
+        <a href="https://www.pratidonaduzzi.com.br" target="_blank">
+          Prati-Donaduzzi
+        </a>
+      </h3>
+      <div class="experience-header">
+        Toledo, Brazil · July 2013 - December 2016
+      </div>
+      <ul class="bullets">
+        <li>Led development of internal enterprise systems supporting pharmaceutical research, operations and compliance processes.</li>
+        <li>Contributed to architectural planning, solution design and project estimation across Java and Ruby-based platforms.</li>
+        <li>Delivered financial, reporting and auditing modules critical to regulatory and tax-related workflows.</li>
+        <li>Maintained operational stability across a multi-system ecosystem through production support and version control management.</li>
+      </ul>
+    </article>
+
+    <article class="experience-item" id="experience-marista">
+      <h3>Senior Full-Stack Engineer -
+        <a href="https://grupomarista.org.br" target="_blank">
+          Grupo Marista
+        </a>
+      </h3>
+      <div class="experience-header">
+        Curitiba, Brazil · June 2009 - July 2013
       </div>
 
-      <div class="job">
-        <div class="job-header">
-          <strong>Prati-Donaduzzi</strong>
-          <span class="dates">Jul 2013 — Dec 2016 · Toledo, Brazil</span>
-        </div>
-        <div class="role">Senior Software Engineer</div>
-        <ul>
-          <li>Full Stack development with Java and Ruby on Rails of local projects for internal use.</li>
-        </ul>
+      <ul class="bullets">
+        <li>Core engineer on an integrated hospital management platform supporting five hospitals.</li>
+        <li>Contributed to architectural evolution, feature planning and integration strategy within a healthcare domain.</li>
+        <li>Designed reporting and data integration tools critical for financial accountability and reimbursement workflows.</li>
+        <li>Acted as primary contact for diagnosing and resolving production issues in a live clinical environment.</li>
+      </ul>
+    </article>
+
+    <article class="experience-item" id="experience-early">
+      <h3>Software Engineer - Early Career /
+        <a href="https://www.maxiconsistemas.com.br" target="_blank">Maxicom</a>,
+        <a href="https://ispsaude.com.br" target="_blank">ISP</a>,
+        Esfera Virtual
+      </h3>
+      <div class="experience-header">
+        Brazil · 2007 - 2009
       </div>
 
-      <div class="job">
-        <div class="job-header">
-          <strong>Grupo Marista (Hospitalar)</strong>
-          <span class="dates">Jun 2009 — Jul 2013 · Curitiba, Brazil</span>
-        </div>
-        <div class="role">Senior Software Engineer</div>
-        <ul>
-          <li>Developed on a J2EE architecture for a medium-traffic Healthcare platform, improving system stability and handling over 5 hospitals.</li>
-        </ul>
+      <ul class="bullets">
+        <li>Worked on web applications and enterprise tools using Java and JEE technologies.</li>
+        <li>Selected to join a startup environment during university, contributing to full lifecycle development activities.</li>
+        <li>Developed e-commerce and enterprise tooling solutions supporting operational workflows.</li>
+      </ul>
+    </article>
+  </article>
+
+  <article class="item skills-section"
+           style="grid-area: skills">
+    <h2>Technical Skills</h2>
+
+    <div class="skill-group">
+      <strong>Architecture & Integration:</strong>
+      Microservices, REST APIs, GraphQL, Event-Driven Systems (RabbitMQ, SQS/SNS, Pub/Sub),
+      Integration Patterns, ETL, Data Transformation
+    </div>
+
+    <div class="skill-group">
+      <strong>Languages:</strong>
+      Java (multiple versions), TypeScript, JavaScript, SQL, Ruby
+    </div>
+
+    <div class="skill-group">
+      <strong>Backend Technologies:</strong>
+      Spring Boot, Dropwizard, Hibernate/JPA, OpenAPI/Swagger, WireMock,
+      SnapLogic Pipelines, Jasper Reports
+    </div>
+
+    <div class="skill-group">
+      <strong>Frontend:</strong>
+      Angular (multiple versions), Angular Material, HTML5, CSS3
+    </div>
+
+    <div class="skill-group">
+      <strong>Cloud & Infrastructure:</strong>
+      AWS (Lambda, SQS, SNS, EventBridge), Azure, GCP (Pub/Sub),
+      Docker, Docker Compose, Terraform
+    </div>
+
+    <div class="skill-group">
+      <strong>Data & Persistence:</strong>
+      PostgreSQL, MS SQL Server, Sybase, Data Migration & Integration
+    </div>
+
+    <div class="skill-group">
+      <strong>Testing & Quality:</strong>
+      TDD, JUnit, Mockito, Integration Testing, End-to-End Testing,
+      Playwright, Protractor, Artillery,
+      SonarQube/SonarCloud, Snyk
+    </div>
+
+    <div class="skill-group">
+      <strong>DevOps & Tooling:</strong>
+      Git, GitHub, GitHub Actions, Jenkins, Maven, Gradle, npm, Yarn,
+      JFrog/Artifactory, ELK Stack, Grafana
+    </div>
+
+    <div class="skill-group">
+      <strong>Security & Identity:</strong>
+      OAuth2, OKTA, Google Authentication, Role-Based Access Control (RBAC)
+    </div>
+  </article>
+
+  <article class="item products-section"
+           style="grid-area: products">
+    <h2>Products</h2>
+
+    <article class="product" id="met-office-r2o">
+      <h3>The MET Office - Space Weather R2O Portal (Modernisation)</h3>
+      <div class="product-header">
+        <strong>Client:</strong> MET Office (via CGI)<br>
+        <strong>Period:</strong> July 2025 - Present<br>
+        <strong>Role:</strong> Frontend Engineer - Sole Developer Responsible for UI Modernisation<br>
+        <strong>Tech:</strong> Angular 20, Angular Material, TypeScript, CSS, HTML
       </div>
 
-      <!-- older roles -->
-      <div class="job small">
-        <div class="job-header"><strong>Instituto Sao Paulo</strong><span class="dates">Jan 2009 — Jun 2009</span></div>
-        <div class="role">Software Engineer</div>
+      <ul class="bullets">
+        <li>
+          Led the frontend modernisation of an internal scientific results portal used by space weather researchers
+          to analyse model runs and operational logs.
+        </li>
+        <li>
+          Redesigned the interface to replace a legacy, developer-built UI with a structured,
+          UX-driven and accessible experience tailored to scientific workflows.
+        </li>
+        <li>
+          Implemented a new Angular 20 frontend aligned with organisational standards to ensure cross-team maintainability
+          and facilitate future contributions from other teams.
+        </li>
+        <li>
+          Improved accessibility to <strong>WCAG AAA contrast compliance</strong>, increasing usability for researchers
+          with diverse accessibility needs.
+        </li>
+        <li>
+          Developed reusable UI components and shared styling patterns to enforce consistency and reduce future implementation
+          effort for related portals.
+        </li>
+        <li>
+          Collaborated closely with the backend/infra tech lead on integration and code reviews while owning the frontend
+          delivery end-to-end.
+        </li>
+      </ul>
+    </article>
+
+    <article class="product" id="specsavers-socrates">
+      <h3>Specsavers - Socrates (Clinical System Modernisation)</h3>
+      <div class="product-header">
+        <strong>Client:</strong> Specsavers (via BJSS / CGI) <br>
+        <strong>Period:</strong> January 2025 - May 2025<br>
+        <strong>Role:</strong> Senior Backend Engineer<br>
+        <strong>Tech:</strong> Java 17, Spring Boot Microservices, GraphQL, Azure, SQL Server
+      </div>
+      <ul class="bullets">
+        <li>Contributed to the modernisation of a core clinical platform used by Specsavers professionals to manage prescriptions, eye test results and in-store sales workflows across international clinics.</li>
+        <li>Implemented backend microservice features and GraphQL resolvers within a distributed Spring Boot architecture hosted on Azure.</li>
+        <li>Supported the replacement of legacy systems with a modern, maintainable architecture designed for future feature expansion without disrupting clinical operations.</li>
+        <li>Worked within a structured branch-based environment strategy enabling isolated database schemas per feature branch, supporting parallel development and efficient testing cycles.</li>
+        <li>Developed unit and component tests to maintain reliability within a high-availability, production-sensitive environment.</li>
+      </ul>
+    </article>
+
+    <article class="product" id="itv-talentpay-2024">
+      <h3>ITV - Talent Pay (Payment Integration Modernisation)</h3>
+      <div class="product-header">
+        <strong>Client:</strong> ITV (via BJSS / CGI)<br>
+        <strong>Period:</strong> July 2024 - December 2024<br>
+        <strong>Role:</strong> Senior Backend Engineer<br>
+        <strong>Tech:</strong> Java 11, Dropwizard, Angular, RabbitMQ, AWS
+      </div>
+      <ul class="bullets">
+        <li>Contributed to the migration of third-party payment integrations responsible for royalty processing across ITV productions.</li>
+        <li>Implemented backend and frontend changes to reconcile structural differences between legacy and new integration providers.</li>
+        <li>Worked within an event-driven architecture leveraging RabbitMQ messaging to ensure reliable payment workflows.</li>
+        <li>Participated in technical spike analysis comparing reporting cost models (existing architecture vs Tableau-based solution) to inform architectural decision-making.</li>
+        <li>Mentored a junior engineer through pairing and code reviews, supporting knowledge transfer and consistent implementation patterns.</li>
+      </ul>
+    </article>
+
+    <article class="product" id="nhs-cervical-screening">
+      <h3>NHS Digital - Cervical Screening Programme (National Data Migration)</h3>
+      <div class="product-header">
+        <strong>Client:</strong> NHS Digital (via BJSS / CGI)<br>
+        <strong>Period:</strong> February 2024 - April 2024<br>
+        <strong>Role:</strong> Backend & Cloud Engineer<br>
+        <strong>Tech:</strong> AWS (Lambda), SQL, Data Migration Automation
+      </div>
+      <ul class="bullets">
+        <li>Contributed to the national migration and centralisation of cervical screening data from multiple GP and hospital systems into the NHS Backbone.</li>
+        <li>Developed automation scripts to support controlled, one-time migration processes across heterogeneous healthcare data sources.</li>
+        <li>Enhanced AWS Lambda functions to validate, transform and safely process patient records, including robust handling of incomplete or inconsistent data.</li>
+        <li>Operated within a high-risk pre go-live environment, supporting production-readiness of a nationally critical public health system.</li>
+      </ul>
+    </article>
+
+    <article class="product" id="tech4good-macc">
+      <h3>Tech for Good - MACC Charity Certificate Automation</h3>
+      <div class="product-header">
+        <strong>Client:</strong> Manchester Community Centre (MACC)<br>
+        <strong>Period:</strong> February 2024 (2-week engagement)<br>
+        <strong>Role:</strong> Solution Engineer<br>
+        <strong>Tech:</strong> Google Apps Script, Google Forms, Google Sheets, Google Docs API, Automated PDF Generation
       </div>
 
-      <div class="job small">
-        <div class="job-header"><strong>Maxicom Sistemas</strong><span class="dates">Aug 2008 — Dec 2008</span></div>
-        <div class="role">Software Engineer</div>
+      <ul class="bullets short-list">
+        <li>Designed and delivered a serverless automation solution in 2 weeks to replace a manual certificate distribution process.</li>
+        <li>Implemented Google Apps Script-based PDF generation and email workflow.</li>
+        <li>Enabled the charity to reuse the solution independently in subsequent years.</li>
+      </ul>
+      <ul class="bullets full-list">
+        <li>Collaborated in a 2-week Tech for Good initiative to design and deliver a cost-effective automation solution for a charity's annual volunteer certification process.</li>
+        <li>Led requirements discovery and evaluated multiple architectural approaches, balancing feasibility, cost, maintainability and delivery timeframe.</li>
+        <li>Designed a lightweight serverless solution using Google Apps Script to generate personalised PDF certificates from spreadsheet data and distribute them automatically via email.</li>
+        <li>Replaced a manual, postal-based process with an automated workflow, significantly reducing operational effort and cost.</li>
+        <li>Delivered documentation and handover guidance enabling the charity to reuse the system independently in subsequent years without developer support.</li>
+      </ul>
+    </article>
+
+    <article class="product irrelevant" id="internal-cloud-monitoring">
+      <h3>Internal Project - Cloud Monitoring POC</h3>
+      <div class="product-header">
+        <strong>Organisation:</strong> BJSS / CGI<br>
+        <strong>Period:</strong> January 2024<br>
+        <strong>Role:</strong> Engineer<br>
+        <strong>Tech:</strong> Microsoft Power Pages, Cloud Monitoring Concepts
+      </div>
+      <ul class="bullets">
+        <li>Developed a proof-of-concept for a cloud monitoring interface using Microsoft Power Pages.</li>
+        <li>Explored rapid prototyping approaches for internal tooling and observability concepts.</li>
+        <li>Demonstrated feasibility of low-code solutions for internal operational visibility use cases.</li>
+      </ul>
+    </article>
+
+    <article class="product" id="ba-nexus">
+      <h3>British Airways - Nexus (Notification Module Modernisation)</h3>
+      <div class="product-header">
+        <strong>Client:</strong> British Airways (via BJSS / CGI)<br>
+        <strong>Period:</strong> June 2023 - January 2024<br>
+        <strong>Role:</strong> Senior Backend Engineer (API Design Lead)<br>
+        <strong>Tech:</strong> Java 17, Spring Boot 3, AWS, Salesforce APIs, WireMock, TypeScript (Playwright for integration testing)
+      </div>
+      <ul class="bullets">
+        <li>Senior backend engineer within a large-scale modernisation programme replacing legacy flight and ticket management systems.</li>
+        <li>Led API design for the notification microservice, serving high-volume customer communications through Salesforce integrations.</li>
+        <li>Designed reusable data-mapping patterns to consolidate passenger, flight and booking information from multiple evolving upstream APIs with inconsistent schemas.</li>
+        <li>Enabled last-minute notification changes before programme cut-off by implementing extensible transformation layers and structured integration contracts.</li>
+        <li>Collaborated across multiple domain teams to resolve integration gaps where upstream services were incomplete or evolving.</li>
+        <li>Mentored two junior engineers while maintaining delivery under tight timelines.</li>
+      </ul>
+    </article>
+
+    <article class="product" id="itv-freecon">
+      <h3>ITV - Freecon (Internal Talent Payment Platform)</h3>
+      <div class="product-header">
+        <strong>Client:</strong> ITV (via BJSS / CGI)<br>
+        <strong>Period:</strong> November 2018 - May 2023<br>
+        <strong>Role:</strong> Senior Backend Engineer (Core Team Member)<br>
+        <strong>Tech:</strong> Java 11, Dropwizard, Angular, AWS (SQS, SNS, Lambda), Terraform
       </div>
 
-      <div class="job small">
-        <div class="job-header"><strong>Esfera Virtual</strong><span class="dates">Mar 2007 — Jul 2008</span></div>
-        <div class="role">Junior Software Engineer</div>
+      <ul class="bullets">
+        <li>Founding contributor to a greenfield, business-critical internal payment platform managing freelancer contracts and ensuring accurate, on-time payments across ITV productions.</li>
+        <li>Built and evolved a platform that processes hundreds of contract workflows per month, ensuring reliable contract creation, amendments and renewals through automated processing pipelines.</li>
+        <li>Designed and implemented backend microservices and Angular frontend features within a cloud-based AWS architecture.</li>
+        <li>Influenced architectural decisions within client-defined constraints, improving service structure and integration patterns.</li>
+        <li>Acted as a senior team member, strengthening reliability through comprehensive testing practices while mentoring junior engineers and supporting technical direction.</li>
+      </ul>
+    </article>
+
+    <article class="product" id="itv-identity">
+      <h3>ITV - Identity / Embark (Access & Onboarding Platform)</h3>
+      <div class="product-header">
+        <strong>Client:</strong> ITV (via BJSS / CGI)<br>
+        <strong>Period:</strong> May 2022 – May 2023<br>
+        <strong>Role:</strong> Backend & Infrastructure Engineer<br>
+        <strong>Tech:</strong> Node.js, GCP, Terraform, Cloud IAM
+      </div>
+      <ul class="bullets short-list">
+        <li>Contributed to a production access-management platform automating onboarding and offboarding across ITV systems.</li>
+        <li>Delivered infrastructure enhancements and Terraform improvements within GCP.</li>
+        <li>Improved automated permission workflows and supported cross-team backend stability.</li>
+      </ul>
+      <ul class="bullets full-list">
+        <li>Contributed to a production access-management platform automating onboarding and offboarding of employees and contractors across ITV systems.</li>
+        <li>Delivered infrastructure enhancements and proof-of-concept solutions to improve deployment stability and operational resilience.</li>
+        <li>Contributed to improvements in automated permission workflows, strengthening role-based access control and reducing manual intervention.</li>
+        <li>Supported enhancements that reduced onboarding and offboarding turnaround time through improved access provisioning and revocation processes.</li>
+        <li>Provided parallel support to the Freecon platform through code reviews, pairing sessions and cross-team collaboration.</li>
+      </ul>
+    </article>
+
+    <article class="product" id="nhs-ers">
+      <h3>NHS - e-Referral Service (e-RS)</h3>
+      <div class="product-header">
+        <strong>Client:</strong> NHS Digital (via BJSS / CGI)<br>
+        <strong>Period:</strong> February 2018 – November 2018<br>
+        <strong>Role:</strong> Full-Stack Engineer<br>
+        <strong>Tech:</strong> Java 8, Spring Boot, Microservices Architecture, Angular
       </div>
 
-    </section>
+      <ul class="bullets">
+        <li>Contributed to the development of the NHS e-Referral Service (e-RS), a nationally used healthcare platform enabling GPs, clinicians and patients to manage referrals and appointment bookings.</li>
+        <li>Worked on backend microservices and supporting frontend components within a large-scale, distributed Spring Boot architecture.</li>
+        <li>Implemented new features and enhancements aligned with national healthcare workflows, including referral management and clinical data exchange.</li>
+        <li>Contributed to component and integration testing to ensure reliability and compliance within a high-availability public-sector environment.</li>
+      </ul>
+    </article>
 
-    <section class="projects card">
-      <h2>Recent Projects</h2>
+    <article class="product" id="coop-membership">
+      <h3>Co-op - Meaningful Membership (Digital Registration Modernisation)</h3>
+      <div class="product-header">
+        <strong>Client:</strong> Co-op (via BJSS / CGI)<br>
+        <strong>Period:</strong> June 2017 - February 2018<br>
+        <strong>Role:</strong> Full-Stack Engineer<br>
+        <strong>Tech:</strong> Java, Dropwizard Microservices, Angular, TDD
+      </div>
+      <ul class="bullets short-list">
+        <li>Contributed to modernisation of Co-op’s membership registration platform, improving digital sign-up conversion (~20%).</li>
+        <li>Developed backend microservices and Angular features within a distributed Dropwizard architecture.</li>
+        <li>Worked within a strong TDD culture, delivering reliable, maintainable services.</li>
+      </ul>
+      <ul class="bullets full-list">
+        <li>Contributed to the modernisation of Co-op's customer-facing membership registration platform aimed at increasing digital sign-up conversion.</li>
+        <li>Developed backend microservices and Angular frontend features within a distributed Dropwizard-based architecture.</li>
+        <li>Collaborated cross-team to improve performance and reliability of dependent services, reducing registration friction during high-traffic periods.</li>
+        <li>Worked within a strong TDD culture, implementing comprehensive unit and integration tests to ensure robustness and maintainability.</li>
+        <li>Contributed to measurable improvements in registration completion rates (estimated 20%+ increase in conversion).</li>
+      </ul>
+    </article>
 
-      <div class="project">
-        <strong>The MET Office (R2O) • CGI</strong>
-        <div class="dates">Jul 2025 — Current</div>
-        <ul>
-          <li>Developed the new Angular 20 + Angular Material frontend for the modernization of the R20 scientific results portal as the sole frontend engineer.</li>
-        </ul>
+    <article class="product" id="itv-talentpay-2017">
+      <h3>ITV - Talent Pay (Initial Engagement)</h3>
+      <div class="product-header">
+        <strong>Client:</strong> ITV (via BJSS / CGI)<br>
+        <strong>Period:</strong> April 2017 - June 2017<br>
+        <strong>Role:</strong> Full-Stack Engineer<br>
+        <strong>Tech:</strong> Java, Dropwizard Microservices, Angular, AWS
+      </div>
+      <ul class="bullets">
+        <li>Contributed to ITV’s internal Talent Pay platform within a microservices architecture comprising 20+ services.</li>
+        <li>Delivered backend and frontend fixes while improving unit test coverage and production stability in a large enterprise environment.</li>
+      </ul>
+    </article>
+
+    <article class="product irrelevant" id="prati-donaduzzi-systems">
+      <h3>Prati-Donaduzzi - Enterprise Pharmaceutical Systems</h3>
+      <div class="product-header">
+        <strong>Location:</strong> Toledo, Brazil<br>
+        <strong>Period:</strong> July 2013 – December 2016<br>
+        <strong>Role:</strong> Senior Full-Stack Engineer
+        <strong>Tech:</strong> Java 6 / J2EE, Hibernate, PrimeFaces, Ruby on Rails, PostgreSQL, MS SQL Server, Jasper Reports
+      </div>
+      <ul class="bullets">
+        <li>Led development and evolution of multiple internal enterprise systems supporting pharmaceutical research, operations and administrative processes.</li>
+        <li>Contributed to solution design, architectural planning and project estimation across Java (J2EE) and Ruby on Rails platforms.</li>
+        <li>Developed and maintained mission-critical modules including project management tools (Fact-Cause-Action), research hour tracking for tax reporting (SAH), bonus calculation engines (Goals), and access control systems.</li>
+        <li>Implemented auditing mechanisms (Hibernate Envers) and reporting solutions (Jasper Reports) to ensure traceability, compliance and financial accuracy.</li>
+        <li>Designed integration components and data management features enabling consistent business workflows across heterogeneous systems.</li>
+        <li>Maintained operational stability through version control management, production support and rapid issue resolution across a multi-system environment.</li>
+      </ul>
+    </article>
+
+    <article class="product irrelevant" id="grupo-marista-hospitalar">
+      <h3>Grupo Marista - Hospitalar (Integrated Hospital Management Platform)</h3>
+      <div class="product-header">
+        <strong>Location:</strong> Curitiba, Brazil<br>
+        <strong>Period:</strong> June 2009 – July 2013<br>
+        <strong>Role:</strong> Senior Full-Stack Engineer<br>
+        <strong>Tech:</strong> Java 6, J2EE, Hibernate, Swing, JDBC, Sybase, MS SQL Server, Jasper Reports
+      </div>
+      <ul class="bullets">
+        <li>Core engineer on an integrated hospital management system supporting five hospitals across Curitiba, covering patient registration, prescriptions, surgeries, scheduling, pharmaceutical management and health insurance accountability.</li>
+        <li>Contributed to solution design, architectural evolution and feature planning within a team of 6–8 developers and 2 QA engineers.</li>
+        <li>Designed and implemented J2EE-based integration tools and data export/import mechanisms to enable interoperability across heterogeneous healthcare systems.</li>
+        <li>Developed and maintained complex reporting solutions (Jasper Reports) critical for SUS reimbursement processes, improving financial recovery efficiency for hospital operations.</li>
+        <li>Performed performance optimisation and production issue triage, becoming a primary contact for diagnosing and resolving live system incidents.</li>
+        <li>Participated in code reviews and contributed to development standards, improving maintainability and system reliability over a four-year tenure.</li>
+      </ul>
+    </article>
+
+    <article class="product irrelevant" id="early-career-experience">
+      <h3>Early Career - Enterprise Systems & Web Development</h3>
+      <div class="product-header">
+        <strong>Location:</strong> Brazil<br>
+        <strong>Period:</strong> 2007 – 2009<br>
+        <strong>Tech:</strong> Java, JEE, Hibernate, JSF, Oracle Forms, PL/SQL, ERP Integration
       </div>
 
-      <div class="project">
-        <strong>Specsavers (Socrates) • BJSS LTDA</strong>
-        <div class="dates">Jan 2025 — May 2025</div>
-        <ul><li>Backend developer on Specsavers internal solution using Java 17, Spring Boot microservices, GraphQL, Maven on Azure cloud.</li></ul>
-      </div>
+      <ul class="bullets">
+        <li>Selected to join an early-stage startup founded by a university professor, contributing to Java-based web applications and full lifecycle development activities.</li>
+        <li>Developed and maintained an e-commerce solution integrated with ERP systems, supporting order management and operational workflows.</li>
+        <li>Built internal automation tools extending Oracle Forms-based enterprise solutions, including a remote update utility that reduced manual deployment effort across client environments.</li>
+        <li>Gained foundational experience in backend development, system integration and production support within small, fast-moving teams.</li>
+      </ul>
+    </article>
 
-      <div class="project">
-        <strong>ITV (Talent Pay) • BJSS LTDA</strong>
-        <div class="dates">Jul 2024 — Dec 2024</div>
-        <ul><li>Fullstack developer responsible for migration of third-party payment integrations; tech stack included Angular, Dropwizard, Java11, RabbitMq & AWS.</li></ul>
-      </div>
+  </article>
 
-    </section>
+  <article class="item testimonials-section"
+           style="grid-area: testimonials">
+    <h2>Selected Feedback</h2>
 
-    <footer class="footnote">
-      <small>Content extracted from your uploaded CV. Make any edits before printing.</small>
-    </footer>
+    <blockquote>
+      "Rubens consistently delivers high-quality work, quickly integrates into complex projects and proactively
+      takes initiative - including leading spikes that helped inform key technical decisions."
+      <footer>- Squad Lead / Line Manager</footer>
+    </blockquote>
 
-  </section>
-</main>
+    <blockquote>
+      "His Java expertise was invaluable, and his refactor of the notification service significantly improved
+      readability and maintainability. He went above and beyond while mentoring others."
+      <footer>- Senior Developer, IAG Programme</footer>
+    </blockquote>
 
-<script>
-document.getElementById('printBtn').addEventListener('click', function(){ window.print(); });
-</script>
+  </article>
+</div>
+
 </body>
-</html>
