@@ -1,6 +1,7 @@
 @media print {
     html, body {
         font-size: 12px;
+        line-height: 1.15;
         margin: 0;
         --font-size-sm: 0.8rem;
         --font-size-lg: 1.1rem;
@@ -40,5 +41,25 @@
 
     .contact {
         display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: var(--font-size-regular);
+    }
+
+    .education-item .bullets {
+        list-style-type: none;
+        padding-left: 0;
+        padding-inline-start: 0;
+        margin-top: 0.25rem;
+    }
+
+    .products-section {
+        border: none;
+    }
+
+    .page {
+        height: 1020px;
+        padding: 0.5rem;
+        margin-bottom: 0.5rem;
     }
 }
