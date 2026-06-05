@@ -26,6 +26,10 @@ body {
     margin: 2rem;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
 h1 {
     font-size: var(--font-size-huge);
 }
@@ -34,11 +38,9 @@ h2 {
 }
 h3 {
     font-size: var(--font-size-regular);
-    margin: 0.75rem 0 0.25rem 0;
 }
 h4 {
     font-size: var(--font-size-sm);
-    margin: 0.5rem 0;
 }
 
 a {
@@ -47,12 +49,9 @@ a {
     border-bottom: thin solid gray;
 }
 
-.about-section h1 {
-    margin: 0.5rem 0 0 0;
-}
-
-.about-section h2 {
-    margin: 0;
+blockquote {
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 
 .grid-container {
@@ -72,70 +71,95 @@ a {
 }
 
 .item {
-    padding: 1rem;
+    padding: 0.5rem;
     background-color: var(--color-white);
     color: black;
-    text-align: center;
+    text-align: left;
     border-radius: 0.5rem;
     border: 1px solid var(--color-background);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: var(--font-size-regular);
 }
 
-.contact {
+.item h2 {
+    text-align: center;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.material-icons {
+    font-family: 'Material Icons', serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+#contact-number {
     display: none;
 }
 
-.summary-section h2 {
+.contact {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    font-size: var(--font-size-sm);
+}
+
+.about-section {
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
     text-align: center;
+}
+
+.about-section h1 {
+    margin: 0.5rem 0 0 0;
 }
 
 .summary-section {
     text-align: justify;
-    font-size: var(--font-size-regular);
 }
 
-.education-section h2 {
-    text-align: center;
-}
-
+.skills-section,
 .education-section {
-    text-align: left;
-    font-size: var(--font-size-regular);
+    gap: 0.5rem;
 }
 
-.skills-section {
-    text-align: left;
-    font-size: var(--font-size-regular);
-}
-
-.skills-section h2 {
-    text-align: center;
-}
-
-.skill-group,
-.education-item {
-    margin-bottom: 0.5rem;
+.skills-section h2,
+.education-section h2 {
+    margin: 0.5rem 0;
 }
 
 .education-item em {
     font-size: var(--font-size-sm);
 }
 
-.experience-section h2 {
+.testimonials-section {
     text-align: center;
-}
-
-.experience-section {
-    text-align: left;
-    font-size: var(--font-size-regular);
-}
-
-.products-section h2 {
-    text-align: center;
-}
-
-.products-section {
-    text-align: left;
-    font-size: var(--font-size-regular);
 }
 
 .bullets{

@@ -11,18 +11,6 @@
         background-color: white;
     }
 
-    h1, h2, h3, h4, h5, h6, p {
-        margin: 0;
-    }
-
-    h2 {
-        margin: 0.75rem 0;
-    }
-
-    h3 {
-        margin-top: 0.75rem;
-    }
-
     .grid-container {
         max-width: 720px;
 
@@ -39,11 +27,20 @@
         padding: 0.5rem;
     }
 
+    .summary-section {
+        gap: 0.5rem;
+    }
+
+    #contact-number {
+        display: inherit;
+    }
+
     .contact {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        font-size: var(--font-size-regular);
+        margin-top: 0.5rem;
+    }
+
+    .contact-icon {
+        display: none;
     }
 
     .education-item .bullets {
